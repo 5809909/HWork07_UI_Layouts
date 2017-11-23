@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical">
@@ -9,13 +10,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:scaleType="centerCrop"
-        android:src="@drawable/image02"
-        />
+        android:src="@drawable/image02"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="4dp">
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
 
         <ImageView
             android:id="@+id/ic_favorite"
@@ -56,33 +57,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="5dp">
+        android:paddingLeft="8dp">
 
         <TextView
+            style="@style/text_view_black_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_likes_count"
-            android:textColor="@color/colorBlack"
-            android:textSize="@dimen/text_size_small"/>
+            android:text="@string/text_likes_count"/>
 
         <TextView
+            style="@style/text_view_black_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/simple_text"
-            android:textColor="@color/colorBlack"
-            android:textSize="@dimen/text_size_small"/>
+            android:text="@string/simple_text"/>
 
         <TextView
+            style="@style/text_view_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_comments"
-            android:textSize="@dimen/text_size_small"/>
+            android:text="@string/text_comments"/>
 
         <TextView
+            style="@style/text_view_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/time_last_comments"
-            android:textSize="@dimen/text_size_small"/>
+            android:text="@string/time_last_comments"/>
 
     </LinearLayout>
 

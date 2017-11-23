@@ -20,7 +20,7 @@
     <style name="cards_style">
         <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">60dp</item>
-        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
         <item name="android:innerRadius">1dp</item>
         <item name="android:shape">ring</item>
         <item name="android:thicknessRatio">2</item>
@@ -30,27 +30,28 @@
     <style name="cards_image_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_alignParentTop">true</item>
-        <item name="android:layout_centerHorizontal">true</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
 
     <style name="cards_text_style">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/bubblegum_sans</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">60dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginTop">-4dp</item>
+        <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:textSize">@dimen/text_size_small</item>
     </style>
 
     <style name="text_account_text_view">
+        <item name="android:fontFamily">@font/bubblegum_sans</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingTop">5dp</item>
         <item name="android:textColor">@color/colorGrayDark</item>
-        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
     </style>
 
     <style name="card_view_avatar_style">
@@ -77,5 +78,19 @@
         <item name="android:tint">@color/colorGrayDark</item>
     </style>
 
+    <style name="text_view_black_style">
+        <item name="android:fontFamily">@font/bubblegum_sans</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="text_view_style">
+        <item name="android:fontFamily">@font/bubblegum_sans</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="text_view_black_big_style" parent="text_view_black_style">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
 
 </resources>

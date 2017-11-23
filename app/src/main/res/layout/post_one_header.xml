@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -30,15 +31,14 @@
 
 
     <TextView
+        style="@style/text_view_black_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_margin="5dp"
         android:layout_toEndOf="@+id/action_image"
         android:layout_toRightOf="@+id/action_image"
-        android:text="@string/text_user_name"
-        android:textColor="@color/colorBlack"
-        android:textSize="@dimen/text_size_small"/>
+        android:text="@string/text_user_name"/>
 
     <ImageView
         android:layout_width="20dp"
